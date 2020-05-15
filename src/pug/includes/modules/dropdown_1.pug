@@ -1,0 +1,17 @@
+form
+    label Dropdown   
+        .wrapper(class="first")
+            .wrapper__arrow
+                img(src="assets/img/expand_more.svg", alt="arrows")
+            .wrapper__text Спальни, Кровати, Ванные комнаты 
+        .big_wrapper 
+            mixin select(value)
+                .box
+                    .box__text= value
+                    .box__select
+                        .box__select__minus -
+                        .box__select__number 0
+                        .box__select__plus +
+            +select('Спальни')
+            +select('Кровати')
+            +select('Ванные комнаты')

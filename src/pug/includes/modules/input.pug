@@ -1,0 +1,27 @@
+form
+	label Text Field
+		input(type="email" placeholder="Email" class="input")
+	label Dropdown 
+		.wrapper
+			.wrapper__img
+				img(src="assets/img/expand_more.svg", id="fuck" alt="expand_more")
+			select(class="input")                      
+				-var n = 1
+				option Сколько гостей?
+				while n <= 10
+					option(value=n)= n++
+	label masked text field
+		input(type="text" id="date"  class="input input_margin" placeholder="ДД.ММ.ГГГГ")
+	label date Dropdown
+		.wrapper(class="wrapper_short")
+			.wrapper__img
+				img(src="assets/img/expand_more.svg",  alt="expand_more")
+			input(type='text' class='datepicker-here  input input_short input_margin input_opc' placeholder="ДД.ММ.ГГГГ")
+	label Filter Date Dropdown
+		.wrapper
+			input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here input filter input_margin input_opc" placeholder="D.M. - D.M. " data-date-format="dd M")
+	label Subcription text field
+		.wrapper
+			.wrapper__img
+				img(src="assets/img/arrow_forward.svg", alt="expand_more")
+			input(type="email" class="input input_margin" placeholder="Email")

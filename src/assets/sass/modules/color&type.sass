@@ -1,0 +1,91 @@
+.header
+    display: block
+    padding: 30px 0 0 30px
+.wrapper
+    display: flex
+    justify-content: space-between
+
+li
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 20px
+    font-size: 19px
+    line-height: 29px
+    color: #1F2041
+ul.color
+    margin: 67px 0 145px 0
+    li:before
+        display: inline-block
+        content: ''
+        width: 70px
+        height: 70px
+        border-radius: 6px
+        margin: 0 40px 0 0
+        // transform: translateY(0.5em)
+        font-size: 19px
+.color_1:before   
+    background-color: #1F2041
+.color_2:before
+    background-color: rgba(31, 32, 65, 0.75)
+.color_3:before    
+    background-color: rgba(31, 32, 65, 0.5)
+.color_4:before    
+    background-color: rgba(31, 32, 65, 0.25)
+.color_5:before    
+    background-color: rgba(31, 32, 65, 0.05)
+.color_6:before    
+    background-color: #BC9CFF
+.color_7:before
+    background-color: #6FCF97
+    li
+        align-items: center
+
+
+
+ul.type
+    margin: 67px 0 145px 0
+    max-width: 395px
+    li
+        align-items: flex-start
+        margin: 0 0 50px 30px
+        position: relative
+        padding-top: 6px
+
+    li:before
+        position: absolute
+        font-family: Montserrat, sans-serif
+        color: rgba(31, 32, 65, 0.25)
+        
+    .element_1
+        font-size: 24px
+        line-height: 30px
+        &:before   
+            content: 'H1'
+            left: -30px - 29px
+    .element_2
+        font-size: 19px
+        line-height: 24px
+        &:before 
+            content: 'H2'
+            left: -30px - 27px
+            font-size: 19px
+    .element_3 
+        font-size: 12px
+        line-height: 15px
+        text-transform: uppercase
+        &:before
+            content: 'H3'
+            left: -30px - 17px
+            font-size: 12px
+    .element_4
+        font-size: 14px
+        line-height: 24px
+        &:before    
+            content: 'Body'
+            left: -30px - 37px
+            font-size: 14px
+        
+   
+
+

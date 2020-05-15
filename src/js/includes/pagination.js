@@ -1,0 +1,1 @@
+let arrInCircle = document.querySelector(".list .arr")
