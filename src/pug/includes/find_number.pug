@@ -1,0 +1,18 @@
+.find_number
+    .find_number__title Найдём номера под ваши пожелания
+    .find_number__time
+        .arrival
+            .subtitle прибытие
+            .calendar
+                include modules/date_dropdown
+        .leave
+            .subtitle выезд
+            .calendar 
+                include modules/date_dropdown
+    .find_number__guests
+        .subtitle гости
+        .dropdown
+            include modules/dropdown
+    .find_number__btn
+        include modules/payment
+        +payment('Подобрать номер')

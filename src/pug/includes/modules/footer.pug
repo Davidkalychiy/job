@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body
-        footer
-            .block1
-                .wr
-                    img(src="assets/img/insert_emoticon.svg", alt="smile")
-                    .descr Комфорт <br> <span> Шумопоглощающие стены </span>
-                .hr
-                .wr
-                    img(src="assets/img/location_city.svg", alt="smile")
-                    .descr Удобство  <br> <span> Окно в каждой из спален </span>
-                .hr
-            .block2
-                .person
-                    img(src="assets/img/image.svg", alt="murad")
-                    .name Мурад Сарафанов  <br> <span> 5 дней назад </span>
-                .descr
-                    .like
-                    .opin Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно,            шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+footer
+    .block1
+        .block1__smile
+            img(src="assets/img/insert_emoticon.svg", alt="smile")
+            .descr <span class="bold">Комфорт</span> <br> <span> Шумопоглощающие стены </span>
+        .hr
+        .block1__house
+            img(src="assets/img/location_city.svg", alt="smile")
+            .descr <span class="bold">Удобство</span>  <br> <span> Окно в каждой из спален </span>
+        .hr
+    .block2
+        .person
+            
+            img(src="assets/img/image.svg", alt="murad")
+            .name <span class="bold">Мурад Сарафанов</span>  <br> <span> 5 дней назад </span>
+        .descr
+            .like 
+                include like_btn
+            .opin Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно,            шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
                     

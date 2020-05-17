@@ -2,7 +2,7 @@
 import './datapicker.min';
 import  './jquery.maskedinput.min';
 import './jquery-ui.min.js';
-// import './includes/input';
+import './includes/input';
 // import './includes/dropdown_1';
 // import './includes/dropdown_2';
 // import './includes/checkbox';
@@ -12,4 +12,4 @@ import './jquery-ui.min.js';
 // import './includes/rate_btn';
 // import './includes/slider';
 // import './includes/button';
-import './includes/pagination';
+// import './includes/pagination';
