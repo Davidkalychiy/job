@@ -4,15 +4,14 @@
         .arrival
             .subtitle прибытие
             .calendar
-                include modules/date_dropdown
+                +date_dropdown
         .leave
             .subtitle выезд
             .calendar 
-                include modules/date_dropdown
+                +date_dropwond
     .find_number__guests
         .subtitle гости
         .dropdown
-            include modules/dropdown
+            +dropdown_guests
     .find_number__btn
-        include modules/payment
         +payment('Подобрать номер')

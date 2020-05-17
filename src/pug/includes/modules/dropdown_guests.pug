@@ -1,0 +1,11 @@
+mixin dropdown_guests
+	form
+		label
+			.wrapper
+				.wrapper__img
+					img(src="assets/img/expand_more.svg", id="fuck" alt="expand_more")
+				select(class="input")                      
+					-var n = 1
+					option Сколько гостей?
+					while n <= 10
+						option(value=n)= n++

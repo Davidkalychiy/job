@@ -5,11 +5,10 @@ let button_1 = document.querySelector('.button_1'),
 
 function clickBtn(nameBtn, nameBtnStr) {
     let name = nameBtnStr + '_mod';
-    console.log(name);
     nameBtn.addEventListener('click', () => {
         nameBtn.classList.toggle(name);
     })
 }
-clickBtn(button_1, 'button_1');
+// clickBtn(button_1, 'button_1');
 clickBtn(button_2 , 'button_2');
-clickBtn(click_text, 'click_text');
+// clickBtn(click_text, 'click_text');

@@ -1,10 +1,11 @@
-label Radio Buttons
-    .wrapper_radio
-        .wrapper_radio__btn
-            .radio_around
-                .radio_circle
-            .radio_text Мужчина
-        .wrapper_radio__btn
-            .radio_around
-                .radio_circle
-            .radio_text Женщина
+mixin radio_btn(value_1, value_2)
+    label
+        .wrapper_radio
+            .wrapper_radio__btn
+                .radio_around
+                    .radio_circle
+                .radio_text= value_1
+            .wrapper_radio__btn
+                .radio_around
+                    .radio_circle
+                .radio_text= value_2
