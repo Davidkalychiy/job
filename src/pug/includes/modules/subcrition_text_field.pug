@@ -1,6 +1,7 @@
-form
-	label Subcription text field
-		.wrapper
-			.wrapper__img
-				img(src="assets/img/arrow_forward.svg", alt="expand_more")
-			input(type="email" class="input input_margin" placeholder="Email")
+mixin subcrition_text_field(value)
+	form
+		label
+			.wrapper(class="wrapper__subcrition_text_field")
+				.wrapper__img
+					img(src="assets/img/arrow_forward.svg", alt="expand_more")
+				input(type="email" class="input input_margin input__subcrition_text_field" placeholder= value)

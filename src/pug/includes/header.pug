@@ -1,0 +1,25 @@
+mixin header
+    .wrapper_header
+        .logo
+            .logo__img
+                img(src="assets/img/logo_color.svg", alt="logo")
+            .logo__text
+                img(src="assets/img/TOXIN.svg", alt="toxin")
+        .list
+            ol
+                li(id="bold") Home
+                li About Us
+                li
+                    +checkbox("Services")
+                li Careers
+                li News
+                li Documentation
+            .state
+                .entry
+                    +clickme_border('LOGIN')
+                    +clickme_all('REGISTER')
+                .entried
+                    .vr
+                    .name Cosmin Negoita
++footer
+        
