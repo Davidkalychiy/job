@@ -7,7 +7,16 @@ let number = document.querySelectorAll('.box__select__number'),
 	guests = document.querySelectorAll('.wrapper__text'),
 	clear = document.querySelector('.clear'),
 	apply = document.querySelector('.apply');
-let b = 0;
+
+
+function calc_guests() {
+	let b = 0;
+	calc(0);
+	calc(1);
+	calc(2);
+	pressArr(0);
+	pressApply();
+}
 function calc (i) {
 	let a = 0;
 	plus[i].addEventListener('click', function() {
@@ -23,21 +32,21 @@ function calc (i) {
 				minus[i].classList.remove('box__select__minus_mod');		
 			}
 		}
-    });
-    function clearGue() {
-        clear.addEventListener('click', () => {
-            for (let i = 3; i < 6; i++) {
-                minus[i].classList.remove('box__select__minus_mod');
-            };
-            guests[1].textContent = 'Сколько гостей?';
-            b = 0;
-            a = 0;
-            for (let i = 3; i < 6; i++) {
-                number[i].textContent = 0;
-            }
-        })
-    }
-    clearGue()
+	});
+	function clearGue() {
+		clear.addEventListener('click', () => {
+			for (let i = 0; i < 3; i++) {
+				minus[i].classList.remove('box__select__minus_mod');
+			};
+			guests[0].textContent = 'Сколько гостей?';
+			b = 0;
+			a = 0;
+			for (let i = 0; i < 3; i++) {
+				number[i].textContent = 0;
+			}
+		})
+	}
+	clearGue()
 }
 function pressArr(i) {
 	let sts = false;
@@ -54,24 +63,26 @@ function pressArr(i) {
 	});
 }
 
-
 function pressApply() {
 	apply.addEventListener('click', () => {
 		if (b % 10 == 0 || b % 10 == 5 || b % 10 == 6 || b % 10 ==  7 || b % 10 == 8 || b % 10 == 9 || ((b > 4) && (b< 20))){
-		guests[1].textContent = b + " Гостей";
+		guests[0].textContent = b + " Гостей";
 	}else if(b % 10 == 1) {
-		guests[1].textContent = b + " Гость";
+		guests[0].textContent = b + " Гость";
 	}else {
-		guests[1].textContent = b + " Гостя";
+		guests[0].textContent = b + " Гостя";
 	}
 	})
 }
 
 
-pressApply();
+calc_guests();
 
+
+
+
+pressArr(1)
 calc(3);
 calc(4);
 calc(5);
-pressArr(0);
-pressArr(1);
+

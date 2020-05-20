@@ -1,13 +1,14 @@
-form(class='person')
-    label Dropdown   
-        .wrapper(class="first")
-            .wrapper__arrow
-                img(src="assets/img/expand_more.svg", alt="arrows")
-            .wrapper__text Сколько гостей?
-        .big_wrapper(class='big_wrapper_person')
-            +select('Взрослые')
-            +select('Дети')
-            +select('Младенцы')
-            .button
-                .clear Очистить
-                .apply Применить
+mixin dropdown_2(value)
+    form(class='dropdown person')
+        label= value
+            .wrapper(class="first")
+                .wrapper__arrow
+                    img(src="assets/img/expand_more.svg", alt="arrows")
+                .wrapper__text Cколько гостей?
+            .big_wrapper(class='big_wrapper_person')
+                +select('Взрослые')
+                +select('Дети')
+                +select('Младенцы')
+                .button
+                    .clear Очистить
+                    .apply Применить

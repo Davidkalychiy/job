@@ -1,0 +1,29 @@
+.container
+    +header("О нас","Услуги","Вакансии","Новости","Соглашения", "Войти" ,"Зарегистрироваться")
+    .search
+        .search__inf
+            +filter_date_dropdown('даты пребывания в отеле')
+            +dropdown_2('Гости')
+            .slider
+                include modules/slider
+                .slider__text Стоимость за сутки пребывания в номере
+            .checkboxs
+                .title Checkbox Buttons
+                +checkbox('Можно курить')
+                +checkbox('Можно с питомцами')
+                +checkbox('Можно пригласить гостей (до 10 человек)')
+            .avail
+                .title доступность
+                +rich_checkbox('Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
+                +rich_checkbox('Помощник для инвалидов', 'На 1 этаже вас встретит специалист и проводит до номера.')
+            .inf_number
+                +dropdown_1('Удобства номера')
+            .more_inf
+                +exp_checkbox('Дополнительные удобства')
+        .search__result
+            .title Номера, которые мы для вас подобрали
+            .row_1
+            .row_2
+            .row_3
+            .row_4
+            .search__pagination dfdf

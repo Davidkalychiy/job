@@ -1,6 +1,8 @@
-mixin checkbox(value)
+mixin rich_checkbox(bold_text, text)
     .wrapper_checkbox
         .wrapper_checkbox__checkbox
             .cont
                 img(src="assets/img/Vector.svg", alt="vector" class="vector")
-            .text= value
+            .text
+                span= bold_text
+                .rich_checkbox= text

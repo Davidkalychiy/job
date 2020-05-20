@@ -1,43 +1,47 @@
-.wrapper_footer_1
-    .descr
-        .descr__logo
-            .logo_img
-                img(src="assets/img/logo_color.svg", alt="logo")
-            .logo_text
-                img(src="assets/img/TOXIN.svg", alt="toxin")
-        .descr__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-    .nav
-        ol
-            li(id="bold") Navigation
-            li About Us
-            li News
-            li Support
-            li Products
-    .about
-        ol
-            li(id="bold") ABOUT US
-            li Who we are
-            li Our team
-            li Careers
-            li Investors
-    .support
-        ol
-            li(id="bold") Support
-            li Documentation
-            li Community
-            li Get in Touch
-    .subscr
-        ol
-            li(id="bold") Subscribe to our newsletter
-            li(id="rec_news") Receive our latest news and promotions in your inbox!
-            li
-                +subcrition_text_field('Your email address')
-.hr
-.footer
-    .text Copyright © 2018 Toxin UI Kit. All rights reserved.
-    .icon
-        img(src="assets/img/twitter.svg", alt="twitter")
-        img(src="assets/img/facebook.svg", alt="facebook")
-        img(src="assets/img/insta.svg", alt="insta")
+mixin footer_1(descr__text,li_1,li_2,li_3,li_4,li_5,li_6,li_7,li_8,li_9,li_10,li_11,li_12,li_13,li_14,li_15,li_16,subcrition_text_field,copyright)
+    .container
+        .wrapper_footer_1
+            .descr
+                .descr__logo
+                    .logo_img
+                        img(src="assets/img/logo_color.svg", alt="logo")
+                    .logo_text
+                        img(src="assets/img/TOXIN.svg", alt="toxin")
+                .descr__text= descr__text
+            .nav
+                ol
+                    li(id="bold")= li_1
+                    li= li_2
+                    li= li_3
+                    li= li_4
+                    li= li_5
+            .about
+                ol
+                    li(id="bold")= li_6
+                    li= li_7
+                    li= li_8
+                    li= li_9
+                    li= li_10
+            .support
+                ol
+                    li(id="bold")= li_11
+                    li= li_12
+                    li= li_13
+                    li= li_14
+            .subscr
+                ol
+                    li(id="bold")= li_15
+                    li(id="rec_news")= li_16
+                    li
+                        +subcrition_text_field(subcrition_text_field)
+    .container__none
+        .hr
+    .container
+        .footer
+            .text= copyright
+            .icon
+                img(src="assets/img/twitter.svg", alt="twitter")
+                img(src="assets/img/facebook.svg", alt="facebook")
+                img(src="assets/img/insta.svg", alt="insta")
 
 

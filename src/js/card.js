@@ -63,5 +63,15 @@ class HotelCard {
     }
 }
 
-new HotelCard('card_888.png', 888, '9 900', 'люкс', 145, '.wrapper_card').render();
-new HotelCard('card_840.png', 840, '9 900', '', 65, '.wrapper_card').render();
+new HotelCard('card_888.png', 888, '9 900', 'люкс', 145, '.search__result .row_1').render();
+new HotelCard('card_840.png', 840, '9 900', '', 65, '.search__result .row_1').render();
+new HotelCard('card_888.png', 888, '9 900', 'люкс', 145, '.search__result .row_1').render();
+new HotelCard('card_840.png', 840, '9 900', '', 65, '.search__result .row_2').render();
+new HotelCard('card_888.png', 888, '9 900', 'люкс', 145, '.search__result .row_2').render();
+new HotelCard('card_840.png', 840, '9 900', '', 65, '.search__result .row_2').render();
+new HotelCard('card_888.png', 888, '9 900', 'люкс', 145, '.search__result .row_3').render();
+new HotelCard('card_840.png', 840, '9 900', '', 65, '.search__result .row_3').render();
+new HotelCard('card_888.png', 888, '9 900', 'люкс', 145, '.search__result .row_3').render();
+new HotelCard('card_840.png', 840, '9 900', '', 65, '.search__result .row_4').render();
+new HotelCard('card_888.png', 888, '9 900', 'люкс', 145, '.search__result .row_4').render();
+new HotelCard('card_840.png', 840, '9 900', '', 65, '.search__result .row_4').render();
