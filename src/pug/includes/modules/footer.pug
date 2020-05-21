@@ -1,0 +1,22 @@
+mixin infAboutNumber(bold_text, text, name_img)
+    .block_inf
+        .inf
+            img(src=`assets/img/${name_img}.svg`)
+            .descr 
+                span(class="bold")= bold_text 
+                <br>
+                span= text
+        .hr
+mixin review(name,time,text,name_img)
+    .block_rev
+        .person
+            img(src=`assets/img/${name_img}.svg`, alt="murad")
+            .name 
+                span(class="bold")= name  
+                <br> 
+                span= time
+        .descr
+            .like 
+                include like_btn
+            .opin= text
+                        

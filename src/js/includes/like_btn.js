@@ -5,6 +5,7 @@ let heart = document.querySelector('.heart'),
 function like() {
     let start = {active: false, number: 0};
     like_wrapper.addEventListener('click', () => {
+        console.log('sdf')
         heart.classList.toggle('heart_mod'),
         heart_border.classList.toggle('heart_border_mod'),
         like_wrapper.classList.toggle('like_around_mod')

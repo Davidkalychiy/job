@@ -1,6 +1,9 @@
-.wrapper_bullet
-    .head Bullet list
-    un
-        li Нельзя с питомцами
-        li Без вечеринок и мероприятий
-        li Время прибытия — после 13:00,<br> а выезд до 12:00
+mixin bullet_list(title,li_1,li_2,li_3,li_3_br)
+    .wrapper_bullet
+        .head= title
+        un
+            li= li_1
+            li= li_2
+            li= li_3
+                br
+                span= li_3_br
