@@ -1,10 +1,11 @@
-.entry
-    .entry__title Войти
-    .entry__email
-        +text_field('Email')
-    .entry__password
-        +text_field('Пароль')
-    .entry__payment
-        +payment('Войти')
-    .entry__create Нет аккаунта на Toxin?
-        +clickme_border('Создать')
+mixin sign_in
+    .sign_in
+        .sign_in__title Войти
+        .sign_in__email
+            +text_field('Email')
+        .sign_in__password
+            +text_field('Пароль')
+        .sign_in__payment
+            +payment('Войти')
+        .sign_in__create Нет аккаунта на Toxin?
+            +clickme_border('Создать')

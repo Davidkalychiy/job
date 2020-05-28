@@ -1,7 +1,5 @@
-select
-    appearance: none
-
 form
+    font-family: Montserrat, sans-serif
     max-width: 266px
     label
         font-weight: bold
@@ -10,13 +8,14 @@ form
         color: #1F2041
         .wrapper
             position: relative
+            width: 320px
             &__subcrition_text_field
                 width: 260px
             &_short
                 width: 150px
         .input
+            position: relative
             margin-top: 5px
-            margin-bottom: 30px
             position: relative
             display: block
             background: #FFFFFF
@@ -28,22 +27,17 @@ form
             padding: 13px 0 13px 15px
             appearance: none
             height: 44px
-            width: 320px
+            &-text_field
+                width: 320px
             &__subcrition_text_field
                 width: 260px
-                
-            // margin: 5px 0 20px 0
-            &_margin
-                // margin: 5px 0 40px 0
             &_short
                 width: 150px
             &::placeholder
-                font-size: 14px
                 color: rgba(31, 32, 65, 0.25)
             &_opc::placeholder
                 color: rgba(31, 32, 65, 0.75)
             &:hover
-                background: #FFFFFF
                 border: 1px solid rgba(31, 32, 65, 0.5)
         .wrapper__img
             display: flex

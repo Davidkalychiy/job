@@ -1,27 +1,30 @@
-include ../includes/header
+//- include ../includes/header
 include ../includes/modules/select
-include ../includes/modules/checkbox
-include ../includes/modules/rich_checkbox
-include ../includes/modules/exp_checkbox
-include ../includes/modules/clickme_border
-include ../includes/modules/clickme_all
-include ../includes/modules/bullet_list
+//- include ../includes/modules/checkbox
+//- include ../includes/modules/rich_checkbox
+//- include ../includes/modules/exp_checkbox
+//- include ../includes/modules/clickme_border
+//- include ../includes/modules/clickme_all
+//- include ../includes/modules/bullet_list
 //- include ../includes/find_number
 //- include ../includes/modules/date_dropdown
-//- include ../includes/modules/dropdown_guests
 //- include ../includes/modules/payment
-include ../includes/footer_1
-include ../includes/modules/subcrition_text_field
-include ../includes/modules/like_btn
-include ../includes/modules/footer
+//- include ../includes/footer_1
+//- include ../includes/modules/subcrition_text_field
+//- include ../includes/modules/like_btn
+//- include ../includes/modules/footer
 include ../includes/modules/dropdown_1
 include ../includes/modules/dropdown_2
-include ../includes/modules/filter_date_dropdown
+//- include ../includes/modules/filter_date_dropdown
 //- include ../includes/modules/slider
 include ../includes/modules/text_field
-//- include ../includes/modules/masked_text_field
+include ../includes/modules/masked_text_field
+//- include ../includes/modules/toggle
 //- include ../includes/modules/toggle
 //- include ../includes/card
+//- include ../includes/book
+//- include ../includes/registration
+//- include ../includes/entry
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -29,6 +32,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body
-        include ../includes/room_details
+        +dropdown_1
+        +dropdown_2
+
 
     

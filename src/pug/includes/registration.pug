@@ -1,26 +1,27 @@
-.registration
-    .registration__title Регистрация аккаунта
-    .registration__name
-        +text_field('Имя')
-    .registration__surname
-        +text_field('Фамилия')
-    .registration__radio_btn
-        include modules/radio_btn
-        +radio_btn('Мужчина', 'Женщина')
-    .registration__date_born
-        .subtitle дата рождения
-        .date_input
-            +masked_text_field
-    .registration__service
-        .subtitle данные для входа в сервис
-        .email_input
-            +text_field('Email')
-        .password_input
-            +text_field('Пароль')
-    .registration__toggle
-        +toggle('Получать спецпредложения')
-    .registration__payment
-        +payment('Перейти к оплате')
-    .registration__entry Уже есть аккаунт на Toxin
-        +clickme_border('Войти')
+mixin registration
+    .registration
+        .registration__title Регистрация аккаунта
+        .registration__name
+            +text_field('Имя')
+        .registration__surname
+            +text_field('Фамилия')
+        .registration__radio_btn
+            include modules/radio_btn
+            +radio_btn('Мужчина', 'Женщина')
+        .registration__date_born
+            .subtitle дата рождения
+            .date_input
+                +masked_text_field
+        .registration__service
+            .subtitle данные для входа в сервис
+            .email_input
+                +text_field('Email')
+            .password_input
+                +text_field('Пароль')
+        .registration__toggle
+            +toggle('Получать спецпредложения')
+        .registration__payment
+            +payment('Перейти к оплате')
+        .registration__entry Уже есть аккаунт на Toxin
+            +clickme_border('Войти')
 

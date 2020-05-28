@@ -1,12 +1,12 @@
-let number = document.querySelectorAll('.box__select__number'),
-	plus = document.querySelectorAll('.box__select__plus'),
-	minus = document.querySelectorAll('.box__select__minus'),
-	arr = document.querySelectorAll('.wrapper__arrow'),
-	big_wrapper = document.querySelectorAll('.big_wrapper'),
-	main = document.querySelectorAll('.first'),
-	guests = document.querySelectorAll('.wrapper__text'),
-	clear = document.querySelector('.clear'),
-	apply = document.querySelector('.apply');
+let number = document.querySelectorAll('.select__number'),
+	plus = document.querySelectorAll('.select__plus'),
+	minus = document.querySelectorAll('.select__minus'),
+	arr = document.querySelectorAll('.dropdown__arrow'),
+	dropdown_select = document.querySelectorAll('.dropdown__select'),
+	main = document.querySelectorAll('.dropdown__wrapper'),
+	guests = document.querySelectorAll('.dropdown__text'),
+	clear = document.querySelector('.button__clear'),
+	apply = document.querySelector('.button__apply');
 
 
 function calc_guests() {
@@ -53,11 +53,11 @@ function pressArr(i) {
 	arr[i].addEventListener('click', () => {
 		if (sts == true){
 			main[i].classList.remove('wrapper_mod');
-			big_wrapper[i].style.display = 'none';
+			dropdown_select[i].style.display = 'none';
 			sts = false;
 		}else {
 			main[i].classList.add('wrapper_mod');
-			big_wrapper[i].style.display = 'block';
+			dropdown_select[i].style.display = 'block';
 			sts = true;
 		}
 	});

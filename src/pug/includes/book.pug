@@ -1,37 +1,38 @@
-.book
-    .book__head
-        .number № 888 <span>люкс</span>
-        .price 9 990₽ <span>в сутки</span>
-    .book__time
-        .arrival
-            .subtitle прибытие
-            .calendar
-                +date_dropdown
-        .leave
-            .subtitle выезд
-            .calendar 
-                +date_dropdown
-    .book__guests
-        .subtitle гости
-        .dropdown
-            +dropdown_guests
-    .book__inf
-        .all_price 
-            .descr 9 990₽ х 4 суток
-            .price 39 960₽
-        .priceForSer
-            .wrapper_descr
-                .descr Сбор за услуги: скидка 2 179₽
-                .circle_inf i
-            .price 0₽
-        .priceForAddSer
-            .wrapper_descr
-                .desrc Сбор за дополнительные услуги
-                .circle_inf i
-            .price 300₽
-    .book__totaly 
-        .desrc Итого
-        .hr
-        .price 38 081₽
-    .book__btn
-        +payment('Забронировать')
+mixin toBook
+    .book
+        .book__head
+            .number № 888 <span>люкс</span>
+            .price 9 990₽ <span>в сутки</span>
+        .book__time
+            .arrival
+                .subtitle прибытие
+                .calendar
+                    +date_dropdown
+            .leave
+                .subtitle выезд
+                .calendar 
+                    +date_dropdown
+        .book__guests
+            .subtitle гости
+            .dropdown
+                +dropdown_guests
+        .book__inf
+            .all_price 
+                .descr 9 990₽ х 4 суток
+                .price 39 960₽
+            .priceForSer
+                .wrapper_descr
+                    .descr Сбор за услуги: скидка 2 179₽
+                    .circle_inf i
+                .price 0₽
+            .priceForAddSer
+                .wrapper_descr
+                    .desrc Сбор за дополнительные услуги
+                    .circle_inf i
+                .price 300₽
+        .book__totaly 
+            .desrc Итого
+            .hr
+            .price 38 081₽
+        .book__btn
+            +payment('Забронировать')
