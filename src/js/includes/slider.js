@@ -1,7 +1,8 @@
 $("#polzunok").slider({
     animate: "slow",
-    max: 15000,
+    max: 500,
     min: 0,
+    step: 5,
     range: true,
     values: [ 5000 , 10000 ],
     slide : function(event, ui) {    
