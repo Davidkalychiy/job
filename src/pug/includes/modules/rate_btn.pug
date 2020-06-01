@@ -1,4 +1,12 @@
-.wrapper_rate
-    .star_wrapper
-        img(src="assets/img/star.svg", alt="star" class="star")
-        img(src="assets/img/star_border.svg", alt="star" class="star_border")
+mixin rate_btn
+    .wrapper_rate
+        mixin rate
+            .rate
+                .rate__star
+                    img(src="assets/img/star.svg", alt="star" class="star")
+                    img(src="assets/img/star_border.svg", alt="star" class="star_border")
+        +rate
+        +rate
+        +rate
+        +rate
+        +rate

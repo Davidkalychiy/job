@@ -3,18 +3,16 @@ let heart = document.querySelector('.heart'),
     like_wrapper = document.querySelector('.like_around'),
     number = document.querySelector('.like_number');
 function like() {
-    let start = {active: false, number: 0};
+    let start = {active: false, number: number.textContent};
     like_wrapper.addEventListener('click', () => {
-        console.log('sdf')
         heart.classList.toggle('heart_mod'),
         heart_border.classList.toggle('heart_border_mod'),
         like_wrapper.classList.toggle('like_around_mod')
         if (start.active == false) {
-            number.textContent = ++start.number;
+            number.innerHTML = ++start.number ;
             start.active = true;
         }else {
-            start.number = 0;
-            number.textContent = start.number;
+            number.textContent = --start.number;
             start.active = false;
         }
     });

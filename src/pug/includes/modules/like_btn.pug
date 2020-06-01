@@ -1,4 +1,4 @@
-mixin like
+mixin like_btn(number)
     label
         .wrapper_like
             .wrapper_like__btn
@@ -6,4 +6,4 @@ mixin like
                     .like_heart 
                         img(src="assets/img/favorite.svg", alt="heart" class="heart heart_mod")
                         img(src="assets/img/favorite_border.svg", alt="heart_border" class="heart_border")
-                        .like_number 0
+                    .like_number= number

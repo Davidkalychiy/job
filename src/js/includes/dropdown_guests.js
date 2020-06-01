@@ -99,22 +99,47 @@ function pressArr() {
 
 function declension(guests) {
 	if (c % 10 == 0 || c % 10 == 5 || c % 10 == 6 || c % 10 ==  7 || c % 10 == 8 || c % 10 == 9 || ((c > 4) && (c< 20))){
-		dropdown__text_guests.textContent = `${a+b} `+ guests + "," + ` ${c} Младенцев`;
+		if (c == 0) {
+			dropdown__text_guests.textContent = `${a+b} `+ guests;
+		}else if (a+b == 0) {
+			dropdown__text_guests.textContent = `${c} Младенцев`;
+		}
+		else {
+			dropdown__text_guests.textContent = `${a+b} `+ guests + "," + ` ${c} Младенцев`;
+		}
 	}else if(c % 10 == 1) {
-		dropdown__text_guests.textContent = `${a+b} `+ guests + "," + ` ${c} Младенец`;
+		if (c == 0) {
+			dropdown__text_guests.textContent = `${a+b} `+ guests;
+		}else if (a+b == 0) {
+			dropdown__text_guests.textContent = `${c} Младенец`;
+		}
+		else {
+			dropdown__text_guests.textContent = `${a+b} `+ guests + "," + ` ${c} Младенец`;
+		}
 	}else {
-		dropdown__text_guests.textContent = `${a+b} `+ guests + "," + ` ${c} Младенца`;
+		if (c == 0) {
+			dropdown__text_guests.textContent = `${a+b} `+ guests;
+		}else if (a+b == 0) {
+			dropdown__text_guests.textContent = `${c} Младенца`;
+		}else {
+			dropdown__text_guests.textContent = `${a+b} `+ guests + "," + ` ${c} Младенца`;
+		}
 	}
 }
 
 function pressApply() {
 	apply.addEventListener('click', () => {
 		clear.style.display = 'block';
-		if (a+b % 10 == 0 || a+b % 10 == 5 || a+b % 10 == 6 || a+b % 10 ==  7 || a+b % 10 == 8 || a+b % 10 == 9 || ((a+b > 4) && (a+b< 20))){
-			declension('Гостей');
+		if (a+b == 0 && c == 0) {
+			clear.style.display = 'none';
+			dropdown__text_guests.textContent = 'Сколько гостей?'
+			apply.removeEventListener('click', () =>{});
 		}else if(a+b % 10 == 1) {
 			declension('Гость');
-		}else {
+		}else if (a+b % 10 == 0 || a+b % 10 == 5 || a+b % 10 == 6 || a+b % 10 ==  7 || a+b % 10 == 8 || a+b % 10 == 9 || ((a+b > 4) && (a+b< 20))){
+			declension('Гостей');
+		}
+		else {
 			declension('Гостя');
 		}
 	});
