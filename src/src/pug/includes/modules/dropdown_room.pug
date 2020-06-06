@@ -1,0 +1,10 @@
+mixin dropdown_room(value)
+    .dropdown
+        .dropdown__wrapper(id='dropdown__wrapper-room')
+            .dropdown__arrow(id='dropdown__arrow-room')
+                img(src="assets/img/expand_more.svg", alt="arrows")
+            .dropdown__text(id='dropdown__text-room') Спальни, Кровати, Ванные комнаты 
+        .dropdown__select(id='dropdown__select-room')
+            +select('Спальни','minus_room_1','number_room_1','plus_room_1')
+            +select('Кровати','minus_room_2','number_room_2','plus_room_2' )
+            +select('Ванные комнаты','minus_room_3','number_room_3','plus_room_3')

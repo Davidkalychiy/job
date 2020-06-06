@@ -1,0 +1,13 @@
+mixin dropdown_guests(value)
+    .dropdown-guests
+        .dropdown__wrapper(id='dropdown__wrapper-guests')
+            .dropdown__arrow(id='dropdown__arrow-guests')
+                img(src="assets/img/expand_more.svg", alt="arrows")
+            .dropdown__text(id='dropdown__text-guests') Сколько гостей?
+        .dropdown__select(id='dropdown__select-guests')
+            +select('Взрослые','minus_guests_1','number_guests_1','plus_guests_1')
+            +select('Дети','minus_guests_2','number_guests_2','plus_guests_2')
+            +select('Младенцы','minus_guests_3','number_guests_3','plus_guests_3')
+            .button
+                .button__clear Очистить
+                .button__apply Применить

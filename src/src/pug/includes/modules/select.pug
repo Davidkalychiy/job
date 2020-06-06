@@ -1,0 +1,7 @@
+mixin select(value,id_minus,id_number,id_plus)
+    .select
+        .select__text= value
+        .select__wrapper
+            .select__minus(id= id_minus) -
+            .select__number(id= id_number) 0
+            .select__plus(id= id_plus) +

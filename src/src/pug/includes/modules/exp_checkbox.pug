@@ -1,0 +1,14 @@
+mixin exp_checkbox(value)
+    .exp_checkbox= value
+        .exp_checkbox__arrow
+            img(src="assets/img/expand_more.svg", alt="arrow" class="arrow")
+            img(src="assets/img/expand_more.svg", alt="arrow_rotate" class='arrow_rotate')
+    .select_checkbox
+        +checkbox('Завтрак')
+        +checkbox('Письменный стол')
+        +checkbox('Стул для кормления')
+        +checkbox('Кроватка')
+        +checkbox('Телевизор')
+        +checkbox('Шампунь ')
+
+    

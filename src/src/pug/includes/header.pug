@@ -1,0 +1,25 @@
+mixin header(title_1,checkbox_1,title_2,title_3,checkbox_2,clickme_border,clickme_all)
+    .wrapper_header
+        .logo
+            .logo__img
+                img(src="assets/img/logo_color.svg", alt="logo")
+            .logo__text
+                img(src="assets/img/TOXIN.svg", alt="toxin")
+        .list
+            ol
+                li(id="bold")= title_1
+                li Услуги
+                    //- +exp_checkbox('Услуги', 'none')
+                li= title_2
+                    
+                li= title_3
+                li Соглашения
+                    //- +exp_checkbox('Соглашения')
+            .state
+                .entry
+                    +clickme_border(clickme_border)
+                    +clickme_all(clickme_all)
+                .entried
+                    .vr
+                    .name= name
+        

@@ -1,0 +1,12 @@
+mixin review(name,time,text,name_img)
+    .block_rev
+        .person
+            img(src=`assets/img/${name_img}.png`, alt="murad")
+            .person__name
+                span(class="person__bold")= name  
+                <br> 
+                span= time
+        .descr
+            .descr__like
+                +like_btn('12')
+            .descr__opin= text

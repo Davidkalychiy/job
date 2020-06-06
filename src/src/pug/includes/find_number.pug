@@ -1,0 +1,18 @@
+mixin find_number
+    .find_number
+        .find_number__title Найдём номера под ваши пожелания
+        .find_number__time
+            .arrival
+                .subtitle прибытие
+                .calendar
+                    +date_dropdown
+            .leave
+                .subtitle выезд
+                .calendar 
+                    +date_dropdown
+        .find_number__guests
+            .subtitle гости
+            .dropdown
+                +dropdown_2
+        .find_number__btn
+            +payment('Подобрать номер')

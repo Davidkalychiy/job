@@ -1,0 +1,49 @@
+.select
+    position: relative
+    height: 30px
+    background: #FFFFFF
+    border-radius: 4px
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    font-weight: bold
+    font-size: 12px
+    text-transform: uppercase
+    color: #1F2041
+    // padding: 0 0 0 15px
+    margin-bottom: 7px
+    appearance: none
+    vertical-align: middle
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        padding: 0 7px 0 7px
+        .select__number
+            margin: 0 20px 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-weight: bold
+        .select__plus, .select__minus
+            display: flex
+            width: 30px
+            height: 30px
+            border: 1px solid rgba(31,32,65,0.5)
+            border-radius: 100%
+            justify-content: center
+            align-items: center
+            font-weight: normal
+            font-size: 18px
+            line-height: 22px
+            display: flex
+            align-items: center
+            color: rgba(31, 32, 65, 0.5)
+            cursor: pointer
+        .select__minus
+            border: 1px solid rgba(31,32,65,0.25)
+            color: rgba(31, 32, 65, 0.25)
+            &-mod
+                border: 1px solid rgba(31, 32, 65, 0.5)
+                color: rgba(31, 32, 65, 0.5)
