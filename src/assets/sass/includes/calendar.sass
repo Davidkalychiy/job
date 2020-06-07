@@ -1,11 +1,12 @@
 .datepicker
-    width: 320px
-    height: 369px
+    margin: 100px
+    box-sizing: border-box
+    width: 520px
+    height: 569px
     background: #FFFFFF
     border: 1px solid rgba(31, 32, 65, 0.25)
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
     border-radius: 4px
-    padding: 20px 20px 20px 20px 
 .datepicker--nav-title
     font-family: Quicksand, sans-serif
     font-style: normal
@@ -44,6 +45,10 @@
 .datepicker--nav
     border-bottom: none
     margin-bottom: 30px
+    margin-top: 20px
+    padding: 0
+    margin-left: 20px
+    margin-right: 20px
 .datepicker--cells.datepicker--cells-days.-focus-
     display: flex
     justify-content: center
@@ -58,24 +63,32 @@
 .datepicker--cell.datepicker--cell-day.-focus-
     width: 40px
     height: 40px
-    background-color: #1c221f 
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
     border-radius: 22px
     color: #ffffff
 .datepicker--cell.datepicker--cell-day.-in-range-
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
-    opacity: 0.25
+    color: rgba(31, 32, 65, 0.5)
+    // opacity: 0.25
 .datepicker--cell.datepicker--cell-day.-range-from-
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
     border-bottom-right-radius: 0
     border-top-right-radius: 0
+    border-radius: 100%
 .datepicker--cell.datepicker--cell-day.-weekend-.-range-to-
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 
     border-bottom-left-radius: 0
     border-top-left-radius: 0
     position: relative
+    border-radius: 100%
 .datepicker--days.datepicker--body.active
     margin-left: 15px
 .back_element
     width: 100px
     height: 100px
     background-color: red
+
+.datepicker--cell.datepicker--cell-day.-in-range-.-focus-
+    width: 40px
+    height: 40px
+    border-radius: 0

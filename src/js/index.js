@@ -13,8 +13,9 @@ import './jquery-ui.min.js';
 // import './includes/dropdowm_room';
 // import './includes/radio_btn';
 // import './includes/toggle';
-import './card';
-import './includes/rate_btn';
+// import './card';
+import './calendar';
+// import './includes/rate_btn';
 
 
 // import './includes/pagination';
