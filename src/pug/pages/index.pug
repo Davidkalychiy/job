@@ -1,5 +1,5 @@
 //- include ../includes/header
-//- include ../includes/modules/select
+include ../includes/modules/select
 //- include ../includes/modules/checkbox
 //- include ../includes/modules/rich_checkbox
 //- include ../includes/modules/btn_checkbox
@@ -9,9 +9,9 @@
 //- include ../includes/modules/clickme_text
 //- include ../includes/modules/rate_btn
 //- include ../includes/modules/bullet_list
-//- include ../includes/find_number
-
-//- include ../includes/modules/date_dropdown
+include ../includes/find_number
+include ../includes/calendar   
+include ../includes/modules/date_dropdown
 //- include ../includes/modules/payment
 //- include ../includes/card
 //- include ../includes/footer_1
@@ -19,9 +19,9 @@
 //- include ../includes/modules/like_btn
 //- include ../includes/modules/review
 //- include ../includes/modules/pagination
+include ../includes/modules/payment
 //- include ../includes/modules/dropdown_room
-//- include ../includes/modules/dropdown_guests
-//- include ../includes/modules/filter_date_dropdown
+include ../includes/modules/dropdown_guests
 //- include ../includes/modules/slider
 //- include ../includes/modules/text_field
 //- include ../includes/modules/masked_text_field
@@ -38,6 +38,6 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body
-        include ../includes/calendar    
+         +find_number
 
     

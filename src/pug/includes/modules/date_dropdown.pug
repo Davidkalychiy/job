@@ -1,7 +1,8 @@
-mixin date_dropdown
+mixin date_dropdown(date_dropdown_id)
 	form
 		label
 			.wrapper(class="wrapper_short")
 				.wrapper__img
 					img(src="assets/img/expand_more.svg",  alt="expand_more")
-				input(type='text' class='datepicker-here  input input_short input_margin input_opc' placeholder="ДД.ММ.ГГГГ")
+				input(type='text' id= date_dropdown_id class = "input cal" placeholder="ДД.ММ.ГГГГ")
+				//- input()

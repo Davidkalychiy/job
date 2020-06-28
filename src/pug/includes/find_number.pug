@@ -5,14 +5,14 @@ mixin find_number
             .arrival
                 .subtitle прибытие
                 .calendar
-                    +date_dropdown
+                    +date_dropdown('date_1')
             .leave
                 .subtitle выезд
                 .calendar 
-                    +date_dropdown
+                    +date_dropdown('date_2')
         .find_number__guests
             .subtitle гости
             .dropdown
-                +dropdown_2
+                +dropdown_guests
         .find_number__btn
             +payment('Подобрать номер')

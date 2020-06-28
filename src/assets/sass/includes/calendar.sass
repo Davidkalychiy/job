@@ -1,12 +1,16 @@
 .datepicker
-    margin: 100px
     box-sizing: border-box
-    width: 520px
-    height: 569px
+    width: 320px
+    height: 369px
     background: #FFFFFF
     border: 1px solid rgba(31, 32, 65, 0.25)
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
     border-radius: 4px
+    position: absolute
+    // margin-left: 100px
+.datepickers-container
+    width: 320px
+    height: 369px
 .datepicker--nav-title
     font-family: Quicksand, sans-serif
     font-style: normal
@@ -92,3 +96,43 @@
     width: 40px
     height: 40px
     border-radius: 0
+
+.datepicker--cell.datepicker--cell-day.-current-
+    color: rgba(31, 32, 65, 0.5)
+.datepicker
+    position: relative
+    .calendar__btn
+        box-sizing: border-box
+        width: 320px
+        position: absolute
+        bottom: 0
+        display: flex
+        justify-content: space-between
+        display: flex
+        justify-content: space-between
+        box-sizing: border-box
+        margin: 0 10px 20px 20px
+        .calendar__clear
+            font-family: Montserrat, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            text-transform: uppercase
+            color: rgba(31, 32, 65, 0.5)
+            cursor: pointer
+            position: absolute
+            bottom: 0
+            // right: 0
+        .calendar__apply
+            font-family: Montserrat, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            text-transform: uppercase
+            color: #BC9CFF
+            cursor: pointer
+            // position: absolute
+            // left: 0
+// .datepicker--button
