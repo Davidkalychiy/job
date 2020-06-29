@@ -7,6 +7,7 @@
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
     border-radius: 4px
     position: absolute
+    font-weight: bold
     // margin-left: 100px
 .datepickers-container
     width: 320px
@@ -48,43 +49,55 @@
     border-radius: 22px
 .datepicker--nav
     border-bottom: none
-    margin-bottom: 30px
+    margin-bottom: 20px
     margin-top: 20px
     padding: 0
     margin-left: 20px
     margin-right: 20px
-.datepicker--cells.datepicker--cells-days.-focus-
-    display: flex
-    justify-content: center
 .datepicker--days-names
     margin: 0
     width: 280px
     display: flex
     justify-content: center
-.datepicker--cell.datepicker--cell-day.-in-range-
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
-    opacity: 0.25
+
 .datepicker--cell.datepicker--cell-day.-focus-
     width: 40px
     height: 40px
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
-    border-radius: 22px
+    border-radius: 100%
     color: #ffffff
 .datepicker--cell.datepicker--cell-day.-in-range-
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
-    color: rgba(31, 32, 65, 0.5)
-    // opacity: 0.25
+    opacity: 0.25
+    color: rgba(31, 32, 65,1)
 .datepicker--cell.datepicker--cell-day.-range-from-
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
-    border-bottom-right-radius: 0
-    border-top-right-radius: 0
     border-radius: 100%
-.datepicker--cell.datepicker--cell-day.-weekend-.-range-to-
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 
-    border-bottom-left-radius: 0
-    border-top-left-radius: 0
+    z-index: 1
     position: relative
+.datepicker--cell.datepicker--cell-day.-range-from-::after
+    position: absolute
+    right: 0
+    content: ''
+    width: 20px
+    height: 40px
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+    color: rgba(31, 32, 65, 0.5)
+    opacity: 0.25
+    z-index: -1
+.datepicker--cell.datepicker--cell-day.-range-to-
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 
     border-radius: 100%
+    position: relative
+.datepicker--cell.datepicker--cell-day.-range-to-::before
+    position: absolute
+    left: 0
+    content: ''
+    width: 20px
+    height: 40px
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+    color: rgba(31, 32, 65, 0.5)
+    opacity: 0.25
+    z-index: -1 
 .datepicker--days.datepicker--body.active
     margin-left: 15px
 .back_element
@@ -98,20 +111,21 @@
     border-radius: 0
 
 .datepicker--cell.datepicker--cell-day.-current-
-    color: rgba(31, 32, 65, 0.5)
+    color: #ffffff
+    width: 40px
+    height: 40px
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+    border-radius: 22px
 .datepicker
     position: relative
     .calendar__btn
         box-sizing: border-box
         width: 320px
+        display: flex
+        justify-content: space-between
         position: absolute
         bottom: 0
-        display: flex
-        justify-content: space-between
-        display: flex
-        justify-content: space-between
-        box-sizing: border-box
-        margin: 0 10px 20px 20px
+        padding: 0 20px 20px 20px
         .calendar__clear
             font-family: Montserrat, sans-serif
             font-style: normal
@@ -121,9 +135,6 @@
             text-transform: uppercase
             color: rgba(31, 32, 65, 0.5)
             cursor: pointer
-            position: absolute
-            bottom: 0
-            // right: 0
         .calendar__apply
             font-family: Montserrat, sans-serif
             font-style: normal
@@ -133,6 +144,22 @@
             text-transform: uppercase
             color: #BC9CFF
             cursor: pointer
-            // position: absolute
-            // left: 0
-// .datepicker--button
+.datepicker--cell.datepicker--cell-day.-range-from-.-range-to-.-selected-
+    width: 40px
+    height: 40px
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+    border-radius: 100%
+
+
+
+i.datepicker--pointer
+    width: 0
+    height: 0
+
+
+.datepicker--cell.datepicker--cell-day.-range-to-
+    border: none
+    color: #ffffff
+.datepicker--cell.datepicker--cell-day.-range-from-
+    border: none
+    color: #ffffff
