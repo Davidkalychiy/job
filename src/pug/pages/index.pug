@@ -1,34 +1,41 @@
-//- include ../includes/header
+include ../includes/header
 include ../includes/modules/select
-//- include ../includes/modules/checkbox
-//- include ../includes/modules/rich_checkbox
+include ../includes/modules/checkbox
+include ../includes/modules/rich_checkbox
+include ../includes/modules/exp_checkbox
+include ../includes/modules/date_dropdown
+include ../includes/modules/filter_date_dropdown
 //- include ../includes/modules/btn_checkbox
 //- include ../includes/modules/clickme_border
-//- include ../includes/modules/clickme_all
-//- include ../includes/modules/clickme_border
+include ../includes/modules/clickme_all
+include ../includes/modules/clickme_border
 //- include ../includes/modules/clickme_text
 //- include ../includes/modules/rate_btn
-//- include ../includes/modules/bullet_list
+include ../includes/modules/bullet_list
 include ../includes/find_number
-include ../includes/calendar   
+//- include ../includes/calendar   
 include ../includes/modules/date_dropdown
 //- include ../includes/modules/payment
 //- include ../includes/card
-//- include ../includes/footer_1
-//- include ../includes/modules/subcrition_text_field
-//- include ../includes/modules/like_btn
-//- include ../includes/modules/review
-//- include ../includes/modules/pagination
+include ../includes/footer_1
+//- include ../includes/landing
+include ../includes/header
+include ../includes/modules/subcrition_text_field
+include ../includes/modules/infAboutNumber
+include ../includes/modules/like_btn
+include ../includes/modules/review
+include ../includes/modules/pagination
 include ../includes/modules/payment
-//- include ../includes/modules/dropdown_room
+//- include ../includes/landing
+include ../includes/modules/dropdown_room
 include ../includes/modules/dropdown_guests
 //- include ../includes/modules/slider
-//- include ../includes/modules/text_field
+include ../includes/modules/text_field
 //- include ../includes/modules/masked_text_field
 //- include ../includes/modules/toggle
 //- include ../includes/modules/radio_btn
 //- include ../includes/card
-//- include ../includes/book
+include ../includes/book
 //- include ../includes/registration
 //- include ../includes/entry
 <!DOCTYPE html>
@@ -38,6 +45,5 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body
-         +find_number
-
+        include ../includes/room_details
     

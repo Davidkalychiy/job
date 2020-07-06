@@ -160,10 +160,18 @@ class HotelCard {
 
 
 }
-new HotelCard('num1.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.wrapper_card').render();
-new HotelCard('num1.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.wrapper_card').render();
-new HotelCard('num1.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.wrapper_card').render();
-new HotelCard('num1.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.wrapper_card').render();
+new HotelCard('num1.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_1').render();
+new HotelCard('num2.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_2').render();
+new HotelCard('num4.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_3').render();
+new HotelCard('num1.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_4').render();
+new HotelCard('num3.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_1').render();
+new HotelCard('num1.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_2').render();
+new HotelCard('num4.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_3').render();
+new HotelCard('num3.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_4').render();
+new HotelCard('num3.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_1').render();
+new HotelCard('num4.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_2').render();
+new HotelCard('num2.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_3').render();
+new HotelCard('num3.png','num2.png','num3.png','num4.png', 888, '9 900', 'люкс', 145, '.row_4').render();
 
 
 

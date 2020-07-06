@@ -1,6 +1,7 @@
 .btn_checkbox
     margin-bottom: 17px
-.exp_checkbox, .btn_checkbox
+
+.exp_checkbox-black, .btn_checkbox, .exp_checkbox
     max-height: 44px
     max-width: 266px
     display: flex
@@ -8,12 +9,11 @@
     align-items: center
     font-family: Montserrat, sans-serif
     font-style: normal
-    font-weight: bold
     font-size: 12px
     text-transform: uppercase
-    color: #1F2041
+    color: black
     // margin-bottom: 17px
-    &__arrow
+    .exp_checkbox__arrow
         position: relative
         width: 44px
         height: 44px
@@ -25,5 +25,7 @@
         .arrow_rotate
             transform: rotate(180deg)
             display: none
+.exp_checkbox
+    color: rgba(31, 32, 65, 0.5)
 .select_checkbox
     display: none

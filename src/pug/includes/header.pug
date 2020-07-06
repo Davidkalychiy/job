@@ -8,13 +8,13 @@ mixin header(title_1,checkbox_1,title_2,title_3,checkbox_2,clickme_border,clickm
         .list
             ol
                 li(id="bold")= title_1
-                li Услуги
-                    //- +exp_checkbox('Услуги', 'none')
+                li 
+                    +exp_checkbox('Услуги')
                 li= title_2
                     
                 li= title_3
-                li Соглашения
-                    //- +exp_checkbox('Соглашения')
+                li 
+                    +exp_checkbox('Соглашения')
             .state
                 .entry
                     +clickme_border(clickme_border)
